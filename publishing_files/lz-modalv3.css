@@ -1,0 +1,149 @@
+﻿*[lzmodal] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 10;
+    display: none;
+}
+
+.lz-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    visibility: hidden;
+}
+
+    .lz-modal * {
+        box-sizing: border-box;
+    }
+
+    .lz-modal .f-clearfix:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .lz-modal .f-left {
+        float: left;
+    }
+
+    .lz-modal .f-right {
+        float: right;
+    }
+
+    .lz-modal .f-block {
+        display: block;
+        overflow: hidden;
+    }
+
+    .lz-modal .no-header-border {
+        border-bottom-color: transparent !important;
+    }
+
+    .lz-modal .no-footer-border {
+        border-top-color: transparent !important;
+    }
+
+    .lz-modal .lz-dialog {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -130px;
+        margin-left: -225px;
+        border-radius: 12px;
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+        border: 1px solid #eee;
+        background-color: #fff;
+        z-index: 30;
+    }
+
+        .lz-modal .lz-dialog .lzdialog-header {
+            padding: 24px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .lz-modal .lz-dialog .lzdialog-footer {
+            padding: 24px;
+        }
+
+        .lz-modal .lz-dialog .lzdialog-body {
+            width: 450px;
+            padding: 0 24px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .lz-modal .lz-dialog .lzdialog-inpanel {
+            background: #F9FAFC;
+            border-radius: 10px;
+        }
+
+        .lz-modal .lz-dialog .lz-btn {
+            display: inline-block;
+            padding: 6px 24px;
+            margin-top: -4px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            cursor: pointer;
+            outline: none;
+            border-radius: 4px;
+        }
+
+            .lz-modal .lz-dialog .lz-btn.close-btn {
+                color: #656D78;
+                background-color: #F5F7FA;
+                border-color: #E6E9ED;
+                margin-right: 10px;
+            }
+
+            .lz-modal .lz-dialog .lz-btn.submit-btn {
+                color: #fff;
+                background-color: #609ee9;
+                border-color: #609ee9;
+            }
+
+                .lz-modal .lz-dialog .lz-btn.submit-btn a {
+                    color: #fff;
+                }
+
+            .lz-modal .lz-dialog .lz-btn.close-btn:hover {
+                background-color: #EFF3F9;
+                border-color: #E6EAF1;
+                color: #656D78;
+            }
+
+            .lz-modal .lz-dialog .lz-btn.submit-btn:hover {
+                background-color: #4B8DDE;
+                border-color: #4B8DDE;
+            }
+
+    .lz-modal .lz-close {
+        display: inline-block;
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTQwNTI1NjMyMDQyIiBjbGFzcz0iaWNvbiIgc3R5bGU9IiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjIwMzAiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTU1My4yMjI1NTQgNDcxLjA4MDk2bDIxNi44MDEyOC0yMTYuODQyMjRhMjguMzQ0MzIgMjguMzQ0MzIgMCAwIDAgMC0zOS45MzZMNzY4LjgzNTk5NCAyMTMuMTE0ODhhMjguMzQ0MzIgMjguMzQ0MzIgMCAwIDAtMzkuODk1MDQgMEw1MTIuMTM5Njc0IDQzMC4yNDM4NCAyOTUuMjk3NDM0IDIxMy4wMzI5NmEyOC4zNDQzMiAyOC4zNDQzMiAwIDAgMC0zOS44OTUwNCAwTDI1NC4xNzM1OTQgMjE0LjIyMDhhMjcuODUyOCAyNy44NTI4IDAgMCAwIDAgMzkuODk1MDRMNDcxLjA1Njc5NCA0NzEuMDgwOTYgMjU0LjIxNDU1NCA2ODcuOTY0MTZhMjguMzQ0MzIgMjguMzQ0MzIgMCAwIDAgMCAzOS44OTUwNGwxLjE4Nzg0IDEuMjI4OGEyOC4zNDQzMiAyOC4zNDQzMiAwIDAgMCAzOS44OTUwNCAwbDIxNi44NDIyNC0yMTYuODgzMiAyMTYuODAxMjggMjE2Ljg0MjI0YTI4LjM0NDMyIDI4LjM0NDMyIDAgMCAwIDM5Ljg5NTA0IDBsMS4yMjg4LTEuMTg3ODRhMjguMzQ0MzIgMjguMzQ0MzIgMCAwIDAgMC0zOS44OTUwNEw1NTMuMTgxNTk0IDQ3MS4wNHoiIHAtaWQ9IjIwMzEiIGZpbGw9IiNjZGNkY2QiPjwvcGF0aD48L3N2Zz4=) center no-repeat;
+        background-size: 100%;
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        cursor: pointer;
+    }

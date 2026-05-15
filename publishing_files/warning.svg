@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40 (33762) - http://www.bohemiancoding.com/sketch -->
+    <title>警告</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="通讯录管理" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-552.000000, -289.000000)" id="右侧内容区域">
+            <g transform="translate(224.000000, 124.000000)">
+                <g id="Group-14" transform="translate(225.000000, 74.000000)">
+                    <g id="Group-10" transform="translate(0.000000, 78.000000)">
+                        <g id="警告" transform="translate(103.000000, 13.000000)">
+                            <rect id="Rectangle-2" fill="#F5BA4E" x="7" y="4" width="2" height="5" rx="1"></rect>
+                            <rect id="Rectangle-6" stroke="#F5BA4E" x="1" y="1" width="14" height="14" rx="7"></rect>
+                            <path d="M8,12 C8.55228475,12 9,11.5522847 9,11 C9,10.4477153 8.55228475,10 8,10 C7.44771525,10 7,10.4477153 7,11 C7,11.5522847 7.44771525,12 8,12 Z" id="Oval-8" fill="#F5BA4E"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

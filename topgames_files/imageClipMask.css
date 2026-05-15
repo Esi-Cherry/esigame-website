@@ -1,0 +1,461 @@
+#img_clipMask_PopWrapper .clip_pa {
+    position: absolute;
+    z-index: auto;
+}
+
+#img_clipMask_PopWrapper .clip_pr {
+    position: relative;
+}
+
+#img_clipMask_PopWrapper .clip_pen {
+    pointer-events: none;
+}
+
+#img_clipMask_PopWrapper .incScreen {
+    width: 100%;
+    height: 100%;
+}
+
+#img_clipMask_PopWrapper .domfly {
+    top: -9999px;
+    left: -9999px;
+}
+
+#img_clipMask_PopWrapper {
+    position: absolute;
+    z-index: auto;
+}
+    #img_clipMask_PopWrapper+.pop_documentBody_ID {
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+#img_clipMask_PopWrapper .clipMask {
+    z-index: 1;
+    cursor: pointer;
+}
+
+    #img_clipMask_PopWrapper .clipMask .mask {
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.8);
+        z-index: 10;
+        user-select: none;
+        touch-action: none;
+    }
+
+    #img_clipMask_PopWrapper .clipResizeWrapID {
+        z-index: 3;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+        #img_clipMask_PopWrapper .clipResizeWrapID.disabled{
+            pointer-events: none;
+        }
+        #img_clipMask_PopWrapper .clipHandles .handles {
+            user-select: none;
+            touch-action: none;
+        }
+/*.clipController {
+    cursor: move;
+}*/
+#img_clipMask_PopWrapper #clipControlHandles {
+    position: absolute;
+}
+    #img_clipMask_PopWrapper #clipControlHandles .handles {
+        display: none;
+        z-index: 10;
+    }
+
+#img_clipMask_PopWrapper .clipHandles .ml, .clipHandles .mr {
+    width: 5px;
+    height: 20px;
+    top: 50%;
+    margin-top: -10px;
+    background-color: #3899ec;
+}
+
+#img_clipMask_PopWrapper .clipHandles .tm, .clipHandles .bm {
+    width: 20px;
+    height: 5px;
+    left: 50%;
+    margin-left: -10px;
+    background-color: #3899ec;
+}
+
+#img_clipMask_PopWrapper .clipHandles .tl, .clipHandles .tr {
+    top: -10px;
+    width: 10px;
+    height: 10px;
+}
+
+#img_clipMask_PopWrapper .clipHandles .bl, .clipHandles .br {
+    bottom: -10px;
+    width: 10px;
+    height: 10px;
+}
+
+#img_clipMask_PopWrapper .clipHandles .tl {
+    border-left: 5px solid #3899ec;
+    border-top: 5px solid #3899ec;
+}
+
+#img_clipMask_PopWrapper .clipHandles .bl {
+    border-left: 5px solid #3899ec;
+    border-bottom: 5px solid #3899ec;
+}
+
+#img_clipMask_PopWrapper .clipHandles .tr {
+    border-top: 5px solid #3899ec;
+    border-right: 5px solid #3899ec;
+}
+
+#img_clipMask_PopWrapper .clipHandles .br {
+    border-right: 5px solid #3899ec;
+    border-bottom: 5px solid #3899ec;
+}
+
+#img_clipMask_PopWrapper .clipHandles .mr {
+    right: -10px;
+    cursor: e-resize;
+}
+
+#img_clipMask_PopWrapper .clipHandles .ml {
+    left: -10px;
+    cursor: w-resize;
+}
+
+#img_clipMask_PopWrapper .clipHandles .tm {
+    top: -10px;
+    cursor: n-resize;
+}
+
+#img_clipMask_PopWrapper .clipHandles .bm {
+    bottom: -10px;
+    cursor: s-resize;
+}
+
+#img_clipMask_PopWrapper .clipHandles .tl {
+    left: -10px;
+    cursor: nw-resize;
+}
+
+#img_clipMask_PopWrapper .clipHandles .tr {
+    right: -10px;
+    cursor: ne-resize;
+}
+
+#img_clipMask_PopWrapper .clipHandles .bl {
+    left: -10px;
+    cursor: sw-resize;
+}
+
+#img_clipMask_PopWrapper .clipHandles .br {
+    right: -10px;
+    cursor: se-resize;
+}
+
+
+#img_clipMask_PopWrapper .clipImg {
+    z-index: 2;
+}
+
+
+#img_clipMask_PopWrapper .clipController {
+    z-index: 3;
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+    #img_clipMask_PopWrapper .clipController .clipResizeWrap {
+        overflow: hidden;
+    }
+
+#img_clipMask_PopWrapper .scaleToolWrap {
+    position: absolute;
+    bottom: -56px;
+    left: 0;
+    width: 212px;
+    height: 42px;
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(31,35,51,.15);
+    border-radius: 3px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    pointer-events: auto;
+    z-index: 10;
+}
+
+    #img_clipMask_PopWrapper .scaleToolWrap .scaleRange {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        padding: 0 16px;
+        padding-left: 8px;
+    }
+
+        #img_clipMask_PopWrapper .scaleToolWrap .scaleRange .reduceBtn, .scaleToolWrap .scaleRange .plusBtn {
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+            text-align: center;
+            border: 1px solid #000;
+            border-radius: 100%;
+            color: #555;
+            cursor: pointer;
+            user-select: none;
+            touch-action: none;
+        }
+
+        #img_clipMask_PopWrapper .scaleToolWrap .scaleRange .plusBtn {
+        }
+
+        #img_clipMask_PopWrapper .scaleToolWrap .scaleRange .progressLane {
+            width: 150px;
+            height: 8px;
+            border-radius: 4px;
+            background-color: rgba(130, 187, 255, .3);
+            margin-left: 10px;
+        }
+
+            #img_clipMask_PopWrapper .scaleToolWrap .scaleRange .progressLane em {
+                width: 20px;
+                height: 20px;
+                background-color: #fff;
+                box-shadow: 0 1px 4px 0 rgba(22,45,61,.32);
+                border-radius: 100%;
+                cursor: pointer;
+                top: 50%;
+                margin-top: -10px;
+            }
+
+                #img_clipMask_PopWrapper .scaleToolWrap .scaleRange .progressLane em i {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #5f9ee8;
+                    border-radius: 100%;
+                    left: 50%;
+                    top: 50%;
+                    margin-top: -5px;
+                    margin-left: -5px;
+                }
+
+    #img_clipMask_PopWrapper .scaleToolWrap .close, .scaleToolWrap .confirm {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    #img_clipMask_PopWrapper .scaleToolWrap .close {
+        background-color: #eee;
+    }
+
+        #img_clipMask_PopWrapper .scaleToolWrap .close::before {
+            transform: rotate(45deg);
+        }
+
+        #img_clipMask_PopWrapper .scaleToolWrap .close::after {
+            transform: rotate(-45deg);
+        }
+
+        #img_clipMask_PopWrapper .scaleToolWrap .close::before, .scaleToolWrap .close::after {
+            content: " ";
+            position: absolute;
+            height: 10px;
+            width: 1px;
+            top: 5px;
+            left: 10px;
+            background-color: #5f9ee8;
+        }
+
+    #img_clipMask_PopWrapper .scaleToolWrap .confirm {
+        background-color: #5f9ee8;
+    }
+
+        #img_clipMask_PopWrapper .scaleToolWrap .confirm::after {
+            content: " ";
+            position: absolute;
+            height: 10px;
+            width: 5px;
+            top: 3px;
+            left: 7px;
+            border-right: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            transform: rotate(40deg);
+        }
+
+    #img_clipMask_PopWrapper .scaleToolWrap .close:hover, .scaleToolWrap .confirm:hover {
+        transform: scale(1.1);
+    }
+
+    #img_clipMask_PopWrapper .scaleToolWrap .complete {
+        background-color: #5f9ee8;
+        border-radius: 4px;
+        width: 54px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    #img_clipMask_PopWrapper .scaleToolWrap .cancel {
+        background-color: #e5f0fd;
+        border-radius: 4px;
+        width: 54px;
+        line-height: 30px;
+        text-align: center;
+        color: #609ee9;
+        font-size: 14px;
+        cursor: pointer;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+#img_clipMask_PopWrapper .editContainerItem {
+    position: relative;
+    background: #e5f0fd;
+    color: #609ee9;
+    cursor: pointer;
+    width: 36px;
+    height: 30px;
+    text-align: center;
+    line-height:30px;
+    border-radius: 4px;
+}
+    #img_clipMask_PopWrapper .editContainerItem.active {
+        background: #5f9ee8;
+        color: #fff;
+    }
+    #img_clipMask_PopWrapper .editControlContainer {
+        border-bottom-left-radius:0;
+        border-top-left-radius:0;
+    }
+    #img_clipMask_PopWrapper .editImageContainer {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+    }
+    #img_clipMask_PopWrapper .editContainerItem:hover, #img_clipMask_PopWrapper .scaleToolWrap .cancel:hover {
+        background: #cfe4fd;
+    }
+    #img_clipMask_PopWrapper .editContainerItem.active:hover, #img_clipMask_PopWrapper .scaleToolWrap .complete:hover {
+        background: #3a8bec;
+    }
+    #img_clipMask_PopWrapper .editContainerItem.editImageContainer .iconmaskpicture {
+        font-size: 22px;
+    }
+#img_clipMask_PopWrapper .editContainerItem .iconfont {
+    font-size: 20px;
+}
+#img_clipMask_PopWrapper .editContainerItem:hover .tooltips-layer {
+    display: block;
+}
+#img_clipMask_PopWrapper .editContainerItem .tooltips-layer {
+    display: none;
+    position: absolute;
+    top: -34px;
+    left: -20px;
+    width: 60px;
+    padding: 1px 0 3px;
+    background: #FFF;
+    box-shadow: 0 2px 3px #eee;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    text-align: center;
+    color: #2d4150;
+    line-height: 18px;
+    white-space: nowrap;
+}
+    #img_clipMask_PopWrapper .editContainerItem .tooltips-layer .triangle-border {
+        position: absolute;
+        left: 50%;
+        margin-left: -5px;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+        border-width: 5px;
+        border-style: solid dashed dashed;
+    }
+    #img_clipMask_PopWrapper .editContainerItem .tooltips-layer .tb-border {
+        bottom: -10px;
+        border-color: #DDD transparent transparent;
+    }
+    #img_clipMask_PopWrapper .editContainerItem .tooltips-layer .tb-background {
+        bottom: -9px;
+        border-color: #FFF transparent transparent;
+    }
+    #img_clipMask_PopWrapper .clipConSizeTips {
+        border-radius: 6px;
+        padding: 2px;
+        opacity: .5;
+        position: absolute;
+        height: 20px;
+        line-height: 20px;
+        background: #666;
+        color: #fff;
+        top: -30px;
+        left: 0;
+        min-width: 90px;
+        display: none;
+        z-index: 10;
+        text-align: center;
+    }
+    #img_clipMask_PopWrapper .controlDragIcon {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+        cursor: move;
+        display: none;
+        z-index: 10;
+        background: rgba(0,0,0,.5);
+        color: rgba(255,255,255,.8);
+        text-align: center;
+        border-radius: 50%;
+        font-size: 14px;
+    }
+        #img_clipMask_PopWrapper .controlDragIcon:hover {
+            color: #609ee9;
+            background: rgba(255,255,255,1);
+        }
+        #img_clipMask_PopWrapper .clipViewImgID {
+            background: #fff;
+        }
+    #img_clipMask_PopWrapper .controlDraggerBorder {
+        position: absolute;
+        z-index: 10;
+        background: transparent;
+        min-width:2px;
+        min-height: 2px;
+        cursor: move;
+        display:none;
+    }
+    #img_clipMask_PopWrapper .controlDraggerBorderTop, #img_clipMask_PopWrapper .controlDraggerBorderBottom{
+        width: 100%;
+    }
+    #img_clipMask_PopWrapper .controlDraggerBorderRight, #img_clipMask_PopWrapper .controlDraggerBorderLeft {
+        height: 100%;
+    }
+    #img_clipMask_PopWrapper .controlDraggerBorderTop {
+        top:0;
+    }
+    #img_clipMask_PopWrapper .controlDraggerBorderBottom{
+        bottom:0;
+    }
+    #img_clipMask_PopWrapper .controlDraggerBorderRight {
+        right: 0;
+    }
+
+    #img_clipMask_PopWrapper .controlDraggerBorderLeft {
+        left: 0;
+    }

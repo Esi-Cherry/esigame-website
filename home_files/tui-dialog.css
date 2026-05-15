@@ -1,0 +1,89 @@
+
+#tui-image-editor {
+    z-index: 9995;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* #tui-image-editor * {
+      box-sizing: border-box;
+    } */
+
+.tui-image-editor-mark {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tui-image-editor-inner-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 1100px;
+    height: 700px;
+    overflow: hidden;
+    border-radius: 6px;
+    z-index: 2;
+    margin-left: -550px;
+    margin-top: -350px;
+}
+
+.tui-image-editor-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 52px;
+    height: 52px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAC1ElEQVR4Xu2bsY4TMRCGx0R5ATqKK6+Bl7jueAFOJ12KxMkTXE1NB/cCkR0poJNOQpSUSBS8QagoqelDM2ilrJRbNvHYnpn1XjZlZI/n/2Y8a3vXBk78Z05cPwwAhgw4QsB7f4GIf621P/oKyjl3iYjP5vP51zYNrVNguVw+H41GnwHgouqEiF8A4K219mdfQDjnXhpjPgDA5U7DL2vtedP/VgCr1eoGET82Gm8Q8aoPEHbiHwDg1b4GY8ztdDq9e/RfW0S999/q6PcNwiHxtY7ZbPYo6DEZUNsoNhNC4hHxzlp7G8yAXQ343kyhvY7FQQiJB4DNeDx+PZlMfgcBVA0oBkupCTm+Hl0I5RjWelrk+hhcCeYOIAmCw7cggFKnA4f4ShsJQGkQuMRHASgFAqf4aABdQ+AWnwSgKwgS4pMBaEOQEp8FQAuCpPhsANIQpMWzAJCCoCGeDQA3BC3xrAC4IGiKZweQC0FbvAiAVAhdiBcDEAuhK/GiAGIgGGP+O8Dc20aLnj6Rd4Op+3pKdLs8ehMHQMyENr6ika8HVAGQAEFFvHgNaIaVMB2qLmriBwAxR2KpRbDuR4x+3VwtC1RqQKR4VQjiAAjiN0/2MUgRX71depILIar46nV7TNvcWtTsLzIFUgSl9OGAwQ4gR0hO31QYrAA4BHDYiIHBBoDTcU5bIRgsACQclrDZBiMbgKSjkrZZdoMaDkqPkZwB0o7tp6vkWEkAJB06VLSkxowGIOVIqFoTD1Wid5FRALoUH7GtjoJABlCCeAkIJAAlieeGEARQonhOCMOHktqPHUq1j22Tk6XHLkyc7sfSBy5MqB5WxmYBZZ1A/lz+5C9MeO+vAeC+EYWoBUZKBLn6HKoJ5CszzrkzY8x7AHizc+oTIr7rw32hxiMy7dJUbWS9Xr/YbrfbxWLxhys62naSrs1pO9nleMGVYJfOaYw9ANCgXPIY/wBofYluTeNZxQAAAABJRU5ErkJggg==);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.tui-image-editor-top {
+    height: 52px;
+    padding: 0 24px;
+    line-height: 52px;
+    background-color: #fff;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.tui-image-editor-btm {
+    position: relative;
+    width: 100%;
+    height: 648px;
+    background-color: #f9f9f9;
+}
+
+.tui-image-editor-btm::after {
+    content:'';
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:64px;
+    background-color: #609EE9;
+    z-index:1;
+}
+
+#image-editor-iframe {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 2;
+}
